@@ -39,7 +39,7 @@ async function fetchNewsQuery(query) {
     const data = await response.json();
     return data.articles;
   } catch (error) {
-    console.error("Something Erorr In API Calling Try Again Later", error);
+    console.error("Something Erorr In API Calling Try Again Later", Error);
     return [];
   }
 }
