@@ -38,8 +38,8 @@ async function fetchNewsQuery(query) {
     const response = await fetch(apiUrl);
     const data = await response.json();
     return data.articles;
-  } catch (error) {
-    console.error("Something Erorr In API Calling Try Again Later", Error);
+  } catch (Error) {
+    console.Error("Something Erorr In API Calling Try Again Later", Error);
     return [];
   }
 }
